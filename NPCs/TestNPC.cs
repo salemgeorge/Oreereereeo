@@ -185,20 +185,21 @@ namespace Oreereereeo.NPCs {
 		}
 		
 		public override bool CheckConditions(int left, int right, int top, int bottom) {
-			int score = 0;
-			for(int x = left; x <= right; x++) {
-				for(int y = top; y <= bottom; y++) {
+			// int score = 0;
+			// for(int x = left; x <= right; x++) {
+				// for(int y = top; y <= bottom; y++) {
 					
-					int type = Main.tile[x, y].type;
-					if(type == mod.TileType("TestTile")) {
-						score++;
-					}
-					if(Main.tile[x, y].wall == mod.WallType("TestWall")) {
-						score++;
-					}
-				}
-			}
-			return score >= (right - left) * (bottom - top) / 2;
+					// int type = Main.tile[x, y].type;
+					// if(type == mod.TileType("TestTile")) {
+						// score++;
+					// }
+					// if(Main.tile[x, y].wall == mod.WallType("TestWall")) {
+						// score++;
+					// }
+				// }
+			// }
+			// return score >= (right - left) * (bottom - top) / 2;
+			return true;
 		}
 	}
 }

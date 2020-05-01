@@ -28,7 +28,7 @@ namespace Oreereereeo.Items
 			item.shootSpeed = 4f;
 			item.useAnimation = 7;
 			item.shoot = mod.ProjectileType("BookOfDreProjectile");
-			item.value = Item.buyPrice(gold: 20);
+			item.value = Item.buyPrice(platinum: 2);
 		}
 	}
 }
