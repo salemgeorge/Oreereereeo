@@ -139,8 +139,8 @@ namespace Oreereereeo.NPCs {
 		}
 		
 		public override void SetupShop(Chest shop, ref int nextSlot) {
-			shop.item[nextSlot].SetDefaults(mod.ItemType("TestRayGun"));
-			nextSlot++;
+			// shop.item[nextSlot].SetDefaults(mod.ItemType("TestRayGun"));
+			// nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("TestBullet"));
 			nextSlot++;
 			
@@ -158,6 +158,9 @@ namespace Oreereereeo.NPCs {
 			shop.item[nextSlot].SetDefaults(mod.ItemType("GlitchSword"));
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("TutorialSword"));
+			if(Main.hardMode) {
+				shop.item[nextSlot].SetDefaults(mod.ItemType("TestRayGun"));
+			}
 		}
 		
 		public override void NPCLoot() {
