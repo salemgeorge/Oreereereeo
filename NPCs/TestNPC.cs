@@ -151,15 +151,16 @@ namespace Oreereereeo.NPCs {
 			// }
 			shop.item[nextSlot].SetDefaults(mod.ItemType("TrashItem"));
 			nextSlot++;
-			// if(NPC.AnyNPCs(mod.NPCType("TestNPC"))) {
-				shop.item[nextSlot].SetDefaults(mod.ItemType("BookOfDre"));
-				nextSlot++;
-			// }
+			shop.item[nextSlot].SetDefaults(mod.ItemType("BookOfDre"));
+			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("GlitchSword"));
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("TutorialSword"));
 			if(Main.hardMode) {
 				shop.item[nextSlot].SetDefaults(mod.ItemType("TestRayGun"));
+				nextSlot++;
+				shop.item[nextSlot].SetDefaults(mod.ItemType("BookOfDre"));
+				nextSlot++;
 			}
 		}
 		
